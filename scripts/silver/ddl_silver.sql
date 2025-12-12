@@ -67,7 +67,7 @@ CREATE TABLE silver.erp_cust_az12(
 );
 
 IF OBJECT_ID ('silver.erp_px_cat_g1v2' , 'U') IS NOT NULL
-	DROP TABLE silver.erp_cat_g1v2;
+	DROP TABLE silver.erp_px_cat_g1v2;
 CREATE TABLE silver.erp_px_cat_g1v2(
 	id NVARCHAR(50),
 	cat NVARCHAR(50),
