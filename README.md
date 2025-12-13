@@ -1,29 +1,101 @@
-SQL_data_warehouse_project
-This is Data Warehouse project.
-Building DWH with SQL server, including ETL processes, data modelling and analytics.
+# SQL Data Warehouse Project
 
-Project overview:
-This project involves:
-1.Data Architecture - Designing a Data Warehouse using Medallioan architecture Bronze, Silver, Gold.
-2.ETL Pipelines - Extracting, transforming and loading data from source systems into warehouse.
-3.Data Modelling - Developing fact and dimension tables which are integrated for analytical purposes.
+This repository contains an end-to-end **Data Warehouse (DWH)** project built using **SQL Server**, covering **ETL processes, data modeling, and analytics** following industry best practices.
 
-Project Work flow:
-1.Understanding the requirements 
-2.Choosing the data management approach.In this case we have CSV files as the source data in two folders source_crm, source_erp with contains the CSV data files. The data architecture is drawn using Draw.io 
-3.Then the project tasks are been created using Notion (like industry level JIRA software) to track the work flow and be systematic in what we do.
-4.The Naming conventions are made to be integrated with the specific name we use for Stored Procedures, Schemas, Tables, Columns, Views.
-5.Creating a Database ‘DataWarehouse’ and three schemas ‘bronze’, ‘silver’, ‘gold’.
-6.In the first step we create tables in the bronze schema and load the data from our CSV files to the tables, check for the data completeness and visualize the same in the Draw.io. Now we are ready with the raw data in the bronze layer
-7.In the next step we try to understand the data inconsistencies like (spacing, NULLs, invalid dates, duplicates, unique Primary keys, improper calculations etc) typically known as data cleaning, data standardization, data normalization, data enrichment for each tables in the bronze and load the cleaned data into the silver layer tables which we create under silver schema and perform data quality checks. The whole data flow will be updated in the data flow model.
-8.In the last step we explore the business objects , here in case we have customer, product, sales and understand their dimensions and followed star schema data modelling, updated in the data flow model.
-9.As a part of data modelling we try to join the tables (data integration) and create views for them in the gold schema using the silver schema tables.
-10.At the end we link the dimension tables with the fact tables which will be available ready for the business analytics
+---
 
+## Project Overview
 
+This project focuses on designing and implementing a scalable Data Warehouse using the **Medallion Architecture (Bronze, Silver, Gold layers)**.
 
-About me:
-Hi! I am Srivathsav, a motivated learner transitioning into Data Science domain, with hands-on experience in Python, SQL, Numpy, Pandas and Matplotlib.
-I completed this project under the able guidance of @DataWithBaraa and am very much thankful for creating and sharing such insightful, helpful, selfless content.
+### Key Components
 
+* **Data Architecture**
+  Designing a Data Warehouse using the Medallion Architecture (Bronze, Silver, Gold).
 
+* **ETL Pipelines**
+  Extracting, transforming, and loading data from source systems into the Data Warehouse.
+
+* **Data Modeling**
+  Developing fact and dimension tables optimized for analytical querying.
+
+---
+
+## Project Workflow
+
+1. **Requirement Understanding**
+   Analyzed business and data requirements before starting the implementation.
+
+2. **Source Data & Architecture Design**
+
+   * Source data consists of CSV files stored in two folders: `source_crm` and `source_erp`.
+   * Data architecture and data flow were designed and visualized using **Draw.io**.
+
+3. **Project Management**
+
+   * Project tasks were created and tracked using **Notion** (similar to industry-level tools like JIRA) to ensure a systematic workflow.
+
+4. **Naming Conventions**
+
+   * Defined consistent naming conventions for **Schemas, Stored Procedures, Tables, Columns, and Views**.
+
+5. **Database & Schema Setup**
+
+   * Created a database named `DataWarehouse`.
+   * Implemented three schemas: `bronze`, `silver`, and `gold`.
+
+6. **Bronze Layer (Raw Data)**
+
+   * Created tables in the `bronze` schema.
+   * Loaded raw data from CSV files into bronze tables.
+   * Performed data completeness checks.
+   * Visualized the raw data flow in Draw.io.
+
+7. **Silver Layer (Cleaned & Standardized Data)**
+
+   * Identified and resolved data inconsistencies such as:
+
+     * Extra spacing
+     * NULL values
+     * Invalid dates
+     * Duplicates
+     * Primary key issues
+     * Incorrect calculations
+   * Applied data cleaning, standardization, normalization, and enrichment.
+   * Loaded refined data into `silver` schema tables.
+   * Performed data quality validations.
+   * Updated the data flow model accordingly.
+
+8. **Business Understanding & Star Schema Design**
+
+   * Analyzed business entities such as **Customer, Product, and Sales**.
+   * Identified dimensions and facts.
+   * Designed a **Star Schema** for analytical use cases.
+
+9. **Gold Layer (Analytics-Ready Data)**
+
+   * Integrated data by joining relevant silver tables.
+   * Created analytical **views** in the `gold` schema.
+
+10. **Final Analytics Layer**
+
+    * Linked dimension tables with fact tables.
+    * Prepared the final data model for business intelligence and analytics.
+
+---
+
+## About Me
+
+Hi! I am **Srivathsav**, a motivated learner transitioning into the **Data Science** domain, with hands-on experience in:
+
+* Python
+* SQL
+* NumPy
+* Pandas
+* Matplotlib
+
+I completed this project under the able guidance of **@DataWithBaraa** and am thankful for the **insightful, helpful, and selfless effort** put into creating and sharing such valuable learning content with the community.
+
+---
+
+⭐ If you find this project useful, feel free to star the repository!
