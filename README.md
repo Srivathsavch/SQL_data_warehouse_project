@@ -10,7 +10,7 @@ This project focuses on designing and implementing a scalable Data Warehouse usi
 
 ### Key Components
 
-* **Data Architecture**
+* **Data Architecture** 
   Designing a Data Warehouse using the Medallion Architecture (Bronze, Silver, Gold).
 
 * **ETL Pipelines**
